@@ -1,0 +1,34 @@
+.container-game {
+    width: 100%;
+}
+
+.container-player {
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.name-title {
+    text-align: center;
+    margin: 0;
+}
+
+.contente-optional {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+.content-card {
+    margin: 5px;
+    width: 78px;
+    height: 110px;
+    display: inline-block;
+}
+
+.card-image {
+    width: 100%;
+}

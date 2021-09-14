@@ -1,0 +1,19 @@
+.content-game {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+.play-button {
+    width: 30px;
+    position: fixed;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+.play-button img {
+    width: 30px;
+}
