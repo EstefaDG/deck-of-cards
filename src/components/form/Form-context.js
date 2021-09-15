@@ -15,6 +15,10 @@ export function FormProvider(props) {
 
     const [cards, setCards] = useState([]);
 
+    const [existWin, setExistWin] = useState(false);
+    const [playerOneWin, setPlayerOneWin] = useState(undefined);
+    const [playerTwoWin, setPlayerTwoWin] = useState(undefined);
+
     const play = (history) => {
         if (userGameOne && userGameTwo) {
             setFormValid(true);
@@ -53,9 +57,15 @@ export function FormProvider(props) {
             idGame,
             cards,
             setCards,
-            play
+            play,
+            playerOneWin,
+            playerTwoWin,
+            setPlayerOneWin,
+            setPlayerTwoWin,
+            existWin,
+            setExistWin
         });
-    }, [userGameOne, userGameTwo, formValid, formTouched, isLoadingData, idGame, cards]);
+    }, [userGameOne, userGameTwo, formValid, formTouched, isLoadingData, idGame, cards, playerOneWin, playerTwoWin, existWin]);
 
     return <FormContext.Provider value={value} {...props} />
 }
